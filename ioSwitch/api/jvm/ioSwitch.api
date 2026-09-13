@@ -1,0 +1,55 @@
+public final class io/iprashantpanwar/ioswitch/IOSwitchKt {
+	public static final fun IOSwitch-_UtchM0 (Landroidx/compose/ui/Modifier;ZLio/iprashantpanwar/ioswitch/model/IOSwitchType;Lio/iprashantpanwar/ioswitch/model/IOSwitchColors;Lio/iprashantpanwar/ioswitch/model/IOSwitchShadow;FFZZLkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;II)V
+}
+
+public final class io/iprashantpanwar/ioswitch/model/IOSwitchColors {
+	public static final field $stable I
+	public synthetic fun <init> (JJJLkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1-0d7_KjU ()J
+	public final fun component2-0d7_KjU ()J
+	public final fun component3-0d7_KjU ()J
+	public final fun copy-ysEtTa8 (JJJ)Lio/iprashantpanwar/ioswitch/model/IOSwitchColors;
+	public static synthetic fun copy-ysEtTa8$default (Lio/iprashantpanwar/ioswitch/model/IOSwitchColors;JJJILjava/lang/Object;)Lio/iprashantpanwar/ioswitch/model/IOSwitchColors;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getCheckedTrackColor-0d7_KjU ()J
+	public final fun getThumbColor-0d7_KjU ()J
+	public final fun getUncheckedTrackColor-0d7_KjU ()J
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/iprashantpanwar/ioswitch/model/IOSwitchDefaults {
+	public static final field $stable I
+	public static final field INSTANCE Lio/iprashantpanwar/ioswitch/model/IOSwitchDefaults;
+	public final fun colors-RGew2ao (JJJLandroidx/compose/runtime/Composer;II)Lio/iprashantpanwar/ioswitch/model/IOSwitchColors;
+	public final fun shadow-UAMxF5Q (Landroidx/compose/ui/graphics/Color;FFFJLandroidx/compose/runtime/Composer;II)Lio/iprashantpanwar/ioswitch/model/IOSwitchShadow;
+}
+
+public final class io/iprashantpanwar/ioswitch/model/IOSwitchShadow {
+	public static final field $stable I
+	public synthetic fun <init> (Landroidx/compose/ui/graphics/Color;FFFJLkotlin/jvm/internal/DefaultConstructorMarker;)V
+	public final fun component1-QN2ZGVo ()Landroidx/compose/ui/graphics/Color;
+	public final fun component2 ()F
+	public final fun component3-D9Ej5fM ()F
+	public final fun component4-D9Ej5fM ()F
+	public final fun component5-RKDOV3M ()J
+	public final fun copy-3WjGOq4 (Landroidx/compose/ui/graphics/Color;FFFJ)Lio/iprashantpanwar/ioswitch/model/IOSwitchShadow;
+	public static synthetic fun copy-3WjGOq4$default (Lio/iprashantpanwar/ioswitch/model/IOSwitchShadow;Landroidx/compose/ui/graphics/Color;FFFJILjava/lang/Object;)Lio/iprashantpanwar/ioswitch/model/IOSwitchShadow;
+	public fun equals (Ljava/lang/Object;)Z
+	public final fun getAlpha ()F
+	public final fun getColor-QN2ZGVo ()Landroidx/compose/ui/graphics/Color;
+	public final fun getOffset-RKDOV3M ()J
+	public final fun getRadius-D9Ej5fM ()F
+	public final fun getSpread-D9Ej5fM ()F
+	public fun hashCode ()I
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class io/iprashantpanwar/ioswitch/model/IOSwitchType : java/lang/Enum {
+	public static final field CAPSULE Lio/iprashantpanwar/ioswitch/model/IOSwitchType;
+	public static final field PILL Lio/iprashantpanwar/ioswitch/model/IOSwitchType;
+	public static fun getEntries ()Lkotlin/enums/EnumEntries;
+	public static fun valueOf (Ljava/lang/String;)Lio/iprashantpanwar/ioswitch/model/IOSwitchType;
+	public static fun values ()[Lio/iprashantpanwar/ioswitch/model/IOSwitchType;
+}
+

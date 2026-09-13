@@ -6,7 +6,14 @@ plugins {
     alias(libs.plugins.androidMultiplatformLibrary)
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
+    alias(libs.plugins.vanniktechPublish)
+    alias(libs.plugins.binaryCompatibilityValidator)
+    alias(libs.plugins.ktlint)
+    alias(libs.plugins.dokka)
 }
+
+group = property("GROUP") as String
+version = property("VERSION_NAME") as String
 
 kotlin {
     listOf(
@@ -78,4 +85,41 @@ kotlin {
 
 dependencies {
     androidRuntimeClasspath(libs.compose.uiTooling)
+}
+
+mavenPublishing {
+
+
+    publishToMavenCentral()
+
+    signAllPublications()
+
+    pom {
+        name.set("IOSwitch")
+        description.set("A beautifully animated switch for Compose Multiplatform.")
+        url.set("https://github.com/iprashantpanwar/IOSwitch")
+
+        licenses {
+            license {
+                name.set("Apache License 2.0")
+                url.set(
+                    "https://www.apache.org/licenses/LICENSE-2.0.txt"
+                )
+            }
+        }
+
+        developers {
+            developer {
+                id.set("iprashantpanwar")
+                name.set("Prashant Panwar")
+                url.set("https://github.com/iprashantpanwar")
+            }
+        }
+
+        scm {
+            connection.set("scm:git:git://github.com/iprashantpanwar/IOSwitch.git")
+            developerConnection.set("scm:git:ssh://github.com/iprashantpanwar/IOSwitch.git")
+            url.set("https://github.com/iprashantpanwar/IOSwitch")
+        }
+    }
 }
